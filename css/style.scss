@@ -190,30 +190,32 @@
         }
   }
 
+  
   .finish {
-        color: white;
-        padding: 10rem;
-        line-height: 2rem;
-        grid-gap: 20px;
-        .semi {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 10rem;
-            .icon {
-                width: 20px;
-                height: 20px;
+      color: white;
+      padding: 10rem;
+      line-height: 2rem;
+      grid-gap: 20px;
+      .semi {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 10rem;
+          .icon {
+              width: 20px;
+              height: 20px;
             }
             .zoom {
                 display: flex;
-
+                
             }
             p {
                 padding-left: 20px;
             }
         }
-  }
-  
+    }
 }
+  
+
 
 @media only screen and (max-width: 700px) {
     .wrapper .menu {
@@ -242,7 +244,7 @@
     }
     .wrapper .get {
         width: 30rem;
-        height: 18rem;
+        height: 1rem;
         margin-left: 8rem;
         .system {
             display: grid;
@@ -320,10 +322,11 @@
         padding: 0;
         background: none;
     }
+    .wrapper .finish .semi {
+        display: block;
+    }
 }
-.wrapper .finish .semi {
-    display: block;
-}
+
 
 
 
@@ -372,10 +375,6 @@
     }
     
     
-    }
-    .wrapper .finish .semi {
-        display: block;
-    }
     
     .wrapper .finish .semi {
         display: grid;
@@ -396,9 +395,10 @@
             }
         }
     }
-        .wrapper .finish {
-            padding: 2rem;
-        }
+    .wrapper .finish {
+        padding: 2rem;
+    }
+}
     
 
 @media only screen and (max-width: 375px) {
@@ -445,11 +445,6 @@
         margin-left: 0;
     }
     
-    
-    
-    .wrapper .finish .semi {
-        display: block;
-    }
     
     .wrapper .finish .semi {
         display: grid;
