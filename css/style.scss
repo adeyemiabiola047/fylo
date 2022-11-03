@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+    font-size: 100%;
+}
+
 .wrapper {
     background: rgb(14, 14, 30);
     .wrap {
@@ -14,7 +18,7 @@
     }
   .menu {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     padding: 5rem;
     color: white;
     h1 {
@@ -22,11 +26,11 @@
     }
     .heading ul {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       li {
         text-decoration: none;
         list-style: none;
-        font-size: 1.5rem;
+        font-size: 1rem;
         word-spacing: 0.2rem;
       }
     }
@@ -219,15 +223,9 @@
 
 @media only screen and (max-width: 700px) {
     .wrapper .menu {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
         padding: 2rem;
     }
-    .wrapper .menu .heading ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-        
-    } 
+
     .wrapper .productive {
         padding-left: 0;
     }
@@ -264,18 +262,17 @@
 
 @media only screen and (max-width: 500px) {
     .wrapper .menu {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        
     }
     .wrapper .menu .heading ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
         li {
-            font-size: 1rem;
+            font-size: 0.9rem;
+            justify-self: center;
         }
     }
     .wrapper .top .set img {
-         width: 30rem;
+         width: 100%;
+         padding: 1rem;
     }
     .wrapper .top {
         display: block;
@@ -332,14 +329,9 @@
 
 @media only screen and (max-width: 400px) {
     .wrapper .menu {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
         img {
             width: 5rem;
         }
-    }
-    .wrapper .top .set img  {
-       width: 20rem;
     }
     .wrapper .top {
         display: block;
@@ -356,6 +348,7 @@
     .wrapper .access {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        padding: 2rem;
     }
     .wrapper .productive  {
         display: grid;
@@ -369,8 +362,12 @@
         }
         
     }
+    .wrapper .photo {
+        padding-top: 0;
+    }
     .wrapper .photo .quote {
-        position: relative;
+        position: absolute;
+        margin-top: 3.5rem;
         margin-left: 0;
     }
     
@@ -396,21 +393,17 @@
         }
     }
     .wrapper .finish {
-        padding: 2rem;
+        padding: 10rem;
+        margin-left: -8rem;
     }
 }
     
 
 @media only screen and (max-width: 375px) {
     .wrapper .menu {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
         img {
             width: 5rem;
         }
-    }
-    .wrapper .top .set img  {
-       width: 20rem;
     }
     .wrapper .top {
         display: block;
@@ -427,6 +420,7 @@
     .wrapper .access {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        padding: 0;
     }
     .wrapper .productive  {
         display: grid;
@@ -441,8 +435,9 @@
         
     }
     .wrapper .photo .quote {
-        position: relative;
+        position: absolute;
         margin-left: 0;
+        margin-top: 3.5rem;
     }
     
     
@@ -469,9 +464,10 @@
         }
     }
         .wrapper .finish {
-            padding: 5rem;
+            padding: 10rem;
+            margin-left: -8rem;
             .fire {
-                width: 5rem;
+                width: 10rem;
             }
         }
 }
